@@ -77,7 +77,7 @@ module "versa-flexvnf" {
 |------|-------------|------|---------|----------|
 |metro_code|Two-letter device location's metro code|`string`|`""`|yes|
 |account_number|Billing account number for a device. If not provided, active account for a device metro code will be used|`string`|`0`|no|
-|platform|Device hardware platform flavor: `small`, `medium`, `large`|`string`|`""`|yes|
+|platform|Device hardware platform flavor: `small`, `medium`, `large`, `xlarge`|`string`|`""`|yes|
 |software_package|Device software package: `FLEX_VNF_2`, `FLEX_VNF_4`, `FLEX_VNF_6`, `FLEX_VNF_16`|`string`|`""`|yes|
 |name|Device name|`string`|`""`|yes|
 |term_length|Term length in months: `1`, `12`, `24`, `36`|`number`|`0`|yes|
