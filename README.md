@@ -45,6 +45,7 @@ provider equinix {
 
 module "versa-flexvnf" {
   source            = "equinix/versa-flexvnf/equinix"
+  version           = "1.0.0-beta"
   metro_code        = "SV"
   platform          = "large"
   software_package  = "FLEX_VNF_6"
@@ -82,8 +83,6 @@ module "versa-flexvnf" {
 |name|Device name|`string`|`""`|yes|
 |term_length|Term length in months: `1`, `12`, `24`, `36`|`number`|`0`|yes|
 |notifications|List of email addresses that will receive notifications about device|`list(string)`|n/a|yes|
-|site_id|Site identifier|`string`|`""`|yes|
-|system_ip_address|System IP address|`string`|`""`|yes|
 |acl_template_id|Identifier of a network ACL template that will be applied on a device|`string`|`""`|yes|
 |additional_bandwidth|Amount of additional internet bandwidth for a device, in Mbps|`number`|`0`|no|
 |interface_count|Device interface count: either `10` or `16`|`number`|`10`|no|
