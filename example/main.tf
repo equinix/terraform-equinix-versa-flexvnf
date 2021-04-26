@@ -5,7 +5,7 @@ provider "equinix" {
 
 module "versa-flexvnf" {
   source               = "equinix/versa-flexvnf/equinix"
-  version              = "1.0.0-beta"
+  version              = "1.0.0"
   name                 = "tf-versa"
   metro_code           = var.metro_code_primary
   platform             = "large"
